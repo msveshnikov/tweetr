@@ -3,6 +3,5 @@
 #
 # Examples:
 #
-   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-   Mayor.create(name: 'Emanuel', city: cities.first)
-sleep 5
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
