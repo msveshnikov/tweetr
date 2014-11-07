@@ -6,6 +6,5 @@ class StaticPagesController < ApplicationController
   end
 
   def about
-    a=5
   end
 end
