@@ -21,8 +21,7 @@ class User < ActiveRecord::Base
   has_secure_password
 
   def feed
-    # Это предварительное решение. См. полную реализацию в "Following users".
-    Micropost.where("user_id = ?", id)
+    Micropost.from_users_followed_by(self)
   end
 
   def User.new_remember_token
