@@ -7,6 +7,8 @@ set :repo_url, 'https://github.com/msveshnikov/first_app.git'
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
+set :bundle_flags, '--quiet'   # '--deployment --quiet' is the default
+
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/home/ubuntu/tweetr'
 
@@ -40,7 +42,7 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      execute :touch, release_path.join('tmp/restart.txt')
+      #execute :touch, release_path.join('tmp/restart.txt')
     end
   end
 

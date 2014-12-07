@@ -142,7 +142,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sqlite3 (1.3.8-x86-mingw32)
+    sqlite3 (1.3.10-x86-mingw32)
     sshkit (1.5.1)
       colorize
       net-scp (>= 1.1.2)
@@ -183,7 +183,7 @@ DEPENDENCIES
   russian (~> 0.6.0)
   sass-rails (~> 4.0.2)
   selenium-webdriver (= 2.35.1)
-  sqlite3 (= 1.3.8)
+  sqlite3
   turbolinks (= 1.1.1)
   uglifier (= 2.1.1)
   will_paginate (= 3.0.4)
