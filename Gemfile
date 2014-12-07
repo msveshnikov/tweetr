@@ -16,6 +16,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 group :development do
   gem 'capistrano-rails'
+  gem 'capistrano-passenger'
 end
 
 group :test do
