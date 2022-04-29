@@ -1,12 +1,12 @@
 FROM ruby:1.9.3
 WORKDIR /myapp
 
-# Bundle app source
-COPY . .
+COPY Gemfile /myapp/Gemfile
+COPY Gemfile.lock /myapp/Gemfile.lock
+RUN bundle install --without development test
 
-#COPY Gemfile /myapp/Gemfile
-#COPY Gemfile.lock /myapp/Gemfile.lock
-RUN bundle install
+# Bundle app source
+COPY . /myapp
 
 EXPOSE 3000
 
