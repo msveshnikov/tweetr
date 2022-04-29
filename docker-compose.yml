@@ -1,7 +1,13 @@
 version: "3.9"
+
+volumes:
+    data:
+
 services:
     web:
-        image: extender777/tweetr
+        image: extender777/tweetr:latest
         command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+        volumes:
+            - data:/myapp/db
         ports:
             - "3000:3000"
