@@ -100,7 +100,6 @@ GEM
     crass (1.0.6)
     diff-lcs (1.5.0)
     digest (3.1.0)
-    erb-formatter (0.3.0)
     erubi (1.10.0)
     execjs (2.8.1)
     factory_girl (4.9.0)
@@ -254,11 +253,11 @@ DEPENDENCIES
   bootstrap-will_paginate
   capybara
   coffee-rails
-  erb-formatter
   factory_girl_rails
   faker
   jbuilder
   jquery-rails
+  nokogiri (~> 1.13.4)
   rails
   rspec-rails
   russian
