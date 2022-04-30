@@ -257,7 +257,7 @@ DEPENDENCIES
   faker
   jbuilder
   jquery-rails
-  nokogiri (~> 1.13.4)
+  nokogiri (>= 1.13.4)
   rails
   rspec-rails
   russian
