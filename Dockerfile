@@ -1,4 +1,4 @@
-FROM ruby:1.9.3
+FROM ruby:2.0.0
 WORKDIR /myapp
 
 RUN apt-get update && apt-get install -y nodejs 
