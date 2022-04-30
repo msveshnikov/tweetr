@@ -1,9 +1,9 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar-nav navbar-fixed-top ">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "TWEETR.TK", root_path, id: "logo" %>
+      <%# <%= link_to "TWEETR.TK", root_path, id: "logo" %> 
       <nav>
-        <ul class="nav pull-right">
+        <ul class=" pull-right">
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Help", help_path %></li>
           <% if signed_in? %>
