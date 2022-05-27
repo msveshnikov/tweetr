@@ -146,7 +146,7 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.4-x86_64-linux)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     public_suffix (4.0.7)
     racc (1.6.0)
@@ -257,7 +257,6 @@ DEPENDENCIES
   faker
   jbuilder
   jquery-rails
-  nokogiri (>= 1.13.4)
   rails
   rspec-rails
   russian
